@@ -7,7 +7,6 @@
 const Stack = require('./stack.js');
 const baseConverter = require('./divideTwo.js');
 
-
 // 1. stack-example
 console.log('1. stack-example');
 

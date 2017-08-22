@@ -3,7 +3,7 @@
  * 2. divideByOtherSys
  */
 
-const Stack = require('./stack.js');
+const Stack = require('../stack.js');
 //const stack = new Stack();
 
 module.exports = function baseConverter(decNumber, base) {

@@ -10,7 +10,7 @@ module.exports = class queue {
     // 声明 添加 / 移除 元素的方法
     enqueue(element) {
         this.items.push(element);
-        console.log('this.items', this.items);
+    // console.log('this.items', this.items);
     }
 
     dequeue() {

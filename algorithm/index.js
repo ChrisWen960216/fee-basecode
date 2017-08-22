@@ -5,8 +5,9 @@
 
 //require allFiles
 const Stack = require('./stack.js');
-const baseConverter = require('./divideTwo.js');
+const baseConverter = require('./example/divideTwo.js');
 const Queue = require('./queue.js');
+const hotPotato = require('./example/hotPotato.js');
 
 
 
@@ -26,3 +27,10 @@ console.log('3. queue-example');
 
 let newQueue = new Queue();
 console.log(newQueue.isEmpty());
+
+//4. hotPotato-example
+console.log('4. hotPotato-example');
+
+let names = ['John', 'ChrisWen', 'Jelly', 'SiJie', 'Jennie'];
+let winner = hotPotato(names, 7);
+console.log(`胜利者 ${winner}`);

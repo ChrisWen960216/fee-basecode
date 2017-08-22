@@ -1,9 +1,9 @@
 /* Created By ChrisWen
  * 17/8/21
- * 2. divideByOtherSys
+ * 1. divideByOtherSys
  */
 
-const Stack = require('../stack.js');
+const Stack = require('../class/stack.js');
 //const stack = new Stack();
 
 module.exports = function baseConverter(decNumber, base) {

@@ -1,6 +1,6 @@
 /* Created By ChrisWen
  * 17/8/21
- * 4. queue --- 先进先出,从尾部添加元素，从头部弹出元素
+ * 3. queue --- 先进先出,从尾部添加元素，从头部弹出元素
  * 优先队列：按照设定的优先级大小进行添加
  */
 const Queue = require('./queue.js');

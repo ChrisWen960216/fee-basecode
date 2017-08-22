@@ -1,6 +1,6 @@
 /* Created By ChrisWen
  * 17/8/21
- * 3. queue --- 先进先出,从尾部添加元素，从头部弹出元素
+ * 2. queue --- 先进先出,从尾部添加元素，从头部弹出元素
  */
 
 module.exports = class queue {

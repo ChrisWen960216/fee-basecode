@@ -1,12 +1,12 @@
 /* Created By ChrisWen
  * 17/8/21 
- * This page just running into node enviroment,require all algoriModels to create a example file;
+ * This page just running into node enviroment,require all List-algoriModels to create a example file;
  */
 
 //require allFiles
-const Stack = require('./stack.js');
+const Stack = require('./class/stack.js');
 const baseConverter = require('./example/divideTwo.js');
-const Queue = require('./queue.js');
+const Queue = require('./class/queue.js');
 const hotPotato = require('./example/hotPotato.js');
 
 

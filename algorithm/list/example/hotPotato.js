@@ -1,9 +1,9 @@
 /* Created By ChrisWen
  * 17/8/22
- * 5. hotPotato --- 击鼓传花，循环队列
+ * 2. hotPotato --- 击鼓传花，循环队列
  */
 
-const queue = require('../queue.js');
+const queue = require('../class/queue.js');
 
 module.exports = function hotPotato(nameList, num) {
     let Queue = new queue();

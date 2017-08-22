@@ -5,11 +5,12 @@
 
 module.exports = class queue {
     constructor() {
-        this.items = [1, 2, 3, 4];
+        this.items = [];
     }
     // 声明 添加 / 移除 元素的方法
     enqueue(element) {
         this.items.push(element);
+        console.log('this.items', this.items);
     }
 
     dequeue() {
@@ -29,6 +30,11 @@ module.exports = class queue {
     //获取队列长度
     size() {
         return this.items.length;
+    }
+
+    //清空队列
+    clear() {
+        this.items = [];
     }
 
     //打印队列

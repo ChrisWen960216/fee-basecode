@@ -3,9 +3,12 @@
  * This page just running into node enviroment,require all algoriModels to create a example file;
  */
 
-//require 文件处
+//require allFiles
 const Stack = require('./stack.js');
 const baseConverter = require('./divideTwo.js');
+const Queue = require('./queue.js');
+
+
 
 // 1. stack-example
 console.log('1. stack-example');
@@ -17,3 +20,9 @@ console.log(newStack.isEmpty());
 console.log('2. divideSys-example');
 
 console.log(baseConverter(200, 2));
+
+//3. queue-example
+console.log('3. queue-example');
+
+let newQueue = new Queue();
+console.log(newQueue.isEmpty());

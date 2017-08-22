@@ -6,6 +6,7 @@
 class linkedList {
     constructor() {
         this.state = {
+            // node 插入节点
             node: {
                 element: '',
                 next: null
@@ -37,7 +38,7 @@ class linkedList {
         this.state.length++;
     }
 
-    //移除元素
+    //移除给定位置的元素
     removeAt(position) {
         //检查越界值
         if (position > -1 && position < this.state.length) { /* 检查给出的移除位置是否有效 */
@@ -63,6 +64,84 @@ class linkedList {
         } else {
             return null;
         }
+    }
+
+    //插入元素
+    insert(position, element) {
+        if (position > -1 && position < this.state.length) {
+            this.state.node = {
+                element: element,
+                next: null
+            }
+            let current = this.state.head;
+            let previous;
+            let index = 0;
+
+            if (position === 0) {
+                this.state.node.next = current;
+                this.state.head = this.state.node;
+            } else {
+                while (index++ < position) {
+                    previous = current; /* 对插入位置前一个元素的引用 */
+                    current = current.next; /* 对插入位置后一个元素的引用 */
+                }
+                this.state.node.next = current; /* 将插入项先和 current(后一项) 连接起来 */
+                previous.next = this.state.node; /* 再连接前一项和插入项 */
+            }
+            this.state.length++;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    //将链表转化为字符串
+    toString() {
+        let current = this.state.head;
+        let string = '';
+
+        while (current) {
+            string += ',' + current.element;
+            current = current.next;
+        }
+
+        return string.slice(1);
+    }
+
+    //检索对应元素的位置
+    indexOf(element) {
+        let current = this.state.head;
+        let index = 0;
+
+        while (current) {
+            if (element === current.element) {
+                return index;
+            }
+            index++;
+            current = current.next;
+        }
+        return -1;
+    }
+
+    //移除给定的元素
+    remove(element) {
+        let index = this.indexOf(element); //先调用 indexOf 函数将给的 element 转化成 index
+        return this.removeAt(index); // 再使用 removeAt(index) 移除对应元素
+    }
+
+    //检查空
+    isEmpty() {
+        return this.state.length === 0;
+    }
+
+    //查询链表长度
+    size() {
+        return this.state.length;
+    }
+
+    //获得链表首部
+    getHead() {
+        return this.state.head;
     }
 }
 

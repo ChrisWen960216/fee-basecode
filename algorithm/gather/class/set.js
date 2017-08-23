@@ -16,9 +16,9 @@ module.exports = class set {
     }
 
     //添加
-    add(key, value) {
-        if (!this.has(key)) {
-            this.items[key] = value;
+    add(value) {
+        if (!this.has(value)) {
+            this.items[value] = value;
             return this.items;
         } else {
             return false;
@@ -26,9 +26,9 @@ module.exports = class set {
     }
 
     //移除
-    removeEventListener(key) {
-        if (this.has(key)) {
-            delete this.items[key];
+    removeEventListener(value) {
+        if (this.has(value)) {
+            delete this.items[value];
             return true;
         } else {
             return false;
@@ -57,14 +57,14 @@ module.exports = class set {
 
     //提取所有属性，返回 array
     values() {
-        //return Object.keys(this.items)
-        let keys = [];
-        for (let key in this.items) {
-            if (this.items.hasOwnProperty(key)) {
-                keys.push(key)
-            }
-        }
-        return keys;
+        return Object.keys(this.items);
+    // let keys = [];
+    // for (let key in this.items) {
+    //     if (this.items.hasOwnProperty(key)) {
+    //         keys.push(key)
+    //     }
+    // }
+    // return keys;
     }
 
 }

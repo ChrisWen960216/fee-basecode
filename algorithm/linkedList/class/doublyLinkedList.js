@@ -1,8 +1,8 @@
 /* Created By ChrisWen
- * 17/8/22 
+ * 17/8/23 
  * 2. DoublyLinkedList --- 双向链表
  */
-class doublyLinkedList {
+module.exports = class doublyLinkedList {
     constructor() {
         this.state = {
             // node => 要插入的元素
@@ -89,7 +89,3 @@ class doublyLinkedList {
         }
     }
 }
-
-let DoublyLinkedList = new doublyLinkedList();
-DoublyLinkedList.insert(0, 10);
-DoublyLinkedList.insert(0, 20);

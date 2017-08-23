@@ -3,7 +3,7 @@
  * 1. LinkedList --- 链表
  */
 
-class linkedList {
+module.exports = class linkedList {
     constructor() {
         this.state = {
             // node 插入节点
@@ -145,7 +145,4 @@ class linkedList {
     }
 }
 
-let link = new linkedList();
-link.append(10);
-link.append(20);
-link.append(30);
+

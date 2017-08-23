@@ -41,7 +41,7 @@ class linkedList {
     //移除给定位置的元素
     removeAt(position) {
         //检查越界值
-        if (position > -1 && position < this.state.length) { /* 检查给出的移除位置是否有效 */
+        if (position > -1 && position <= this.state.length) { /* 检查给出的移除位置是否有效 */
             let current = this.state.head; // current 是对链表中当前元素的引用，这里默认值给的是第一个元素 即---head;
             let previous; //当前元素的前一个元素引用
             let index = 0;
@@ -68,7 +68,7 @@ class linkedList {
 
     //插入元素
     insert(position, element) {
-        if (position > -1 && position < this.state.length) {
+        if (position > -1 && position <= this.state.length) {
             this.state.node = {
                 element: element,
                 next: null

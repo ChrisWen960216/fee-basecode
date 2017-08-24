@@ -33,7 +33,6 @@ module.exports = class linkedList {
                 current = current.next;
             }
             current.next = this.state.node;
-            console.log(`目前链表指向的元素是 ${current.element},下一个是 ${current.next.element}。目前链表长度是 ${this.state.length}`);
         }
         this.state.length++;
     }

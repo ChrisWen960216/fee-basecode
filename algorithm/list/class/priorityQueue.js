@@ -8,7 +8,6 @@ const Queue = require('./queue.js');
 class priorityQueue extends Queue {
     constructor() {
         super();
-        this.items = [];
     };
 
     // queueElement(element, priority) {

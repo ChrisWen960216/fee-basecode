@@ -1,6 +1,6 @@
 /* Created By ChrisWen
  * 17/8/24
- * Telephone-Book
+ * All dicitionary TestFile
  */
 const dictionary = require('../class/dictionary.js');
 let Dictionary = new dictionary();
@@ -11,3 +11,6 @@ let HashTable = new hashTable();
 const valuePair = require('../class/valuePair.js');
 let ValuePair = new valuePair();
 ValuePair.put(1, 2);
+
+const linearProbing = require('../class/linearProbing.js');
+let LinearProbing = new LinearProbing();

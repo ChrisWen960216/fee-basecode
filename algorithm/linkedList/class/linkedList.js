@@ -23,12 +23,10 @@ module.exports = class linkedList {
             next: null
         }
         let current;
-
         if (this.state.head === null) {
             this.state.head = this.state.node;
         } else {
             current = this.state.head;
-
             while (current.next) {
                 current = current.next;
             }
@@ -44,7 +42,6 @@ module.exports = class linkedList {
             let current = this.state.head; // current 是对链表中当前元素的引用，这里默认值给的是第一个元素 即---head;
             let previous; //当前元素的前一个元素引用
             let index = 0;
-
 
             //移除第一项
             if (position === 0) { /* 移除第一项只需要让链表的head指向后面就可以 */

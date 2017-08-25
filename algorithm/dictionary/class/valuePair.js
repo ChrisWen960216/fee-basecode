@@ -1,3 +1,9 @@
+/* Created By ChrisWen
+ * 17/8/25
+ * 3. valuePair --- 分离链接
+ * 哈希表的子类，在每一个哈希表的 k-v 点上再创建一个链表，将数据储存到链表上，避免因为存在相同的散列函数而导致数据丢失
+ */
+
 const HashTable = require('./hashTable.js');
 const LinkedList = require('../../linkedList/class/linkedList.js');
 

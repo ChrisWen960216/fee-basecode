@@ -4,7 +4,15 @@
  *  遍历：先序遍历、中序遍历、后序遍历
  */
 
-class binarySearchTree {
+
+/* this.state.node.key = key 会造成 root 和 node 同步更新
+ * this.state.node = {
+ *    key:key,
+ *    right:null,
+ *    left:null
+ *} 就不会出现上述问题
+ */
+module.exports = class binarySearchTree {
     constructor(key) {
         this.state = {
             node: {
@@ -18,7 +26,15 @@ class binarySearchTree {
                 right: null
             } : null
         }
+
     }
+
+    printNode(value) {
+        console.log(value);
+    }
+
+    //Start 插入节点
+    // 辅助插入节点
     static insertNode(node, newNode) {
         if (node.key > newNode.key) {
             if (node.left === null) {
@@ -35,6 +51,7 @@ class binarySearchTree {
         }
     }
 
+    //插入节点
     insert(key) {
         this.state.node = {
             key: key,
@@ -47,13 +64,88 @@ class binarySearchTree {
         } else {
             binarySearchTree.insertNode(this.state.root, this.state.node);
         }
-        console.log(this.state.root)
     }
+    //End 插入节点
+
+    //Start 中序遍历
+
+    inOrderTraverse(callback) {
+        binarySearchTree.inOrderTraverseNode(this.state.root, callback)
+    }
+    //辅助函数
+    static inOrderTraverseNode(node, callback) {
+        if (node !== null) {
+            binarySearchTree.inOrderTraverseNode(node.left, callback);
+            callback(node.key);
+            binarySearchTree.inOrderTraverseNode(node.right, callback);
+        }
+    }
+    //End 中序遍历
+
+    //Start 先序遍历
+    preOrderTraverse(callback) {
+        binarySearchTree.preOrderTraverseNode(this.state.root, callback);
+    }
+
+    //辅助函数
+    static preOrderTraverseNode(node, callback) {
+        if (node !== null) {
+            callback(node.key);
+            binarySearchTree.preOrderTraverseNode(node.left, callback);
+            binarySearchTree.preOrderTraverseNode(node.right, callback);
+        }
+    }
+    //End 先序遍历
+
+    //Start 后序遍历
+    postOrderTraverse(callback) {
+        binarySearchTree.postOrderTraverseNode(this.state.root, callback)
+    }
+
+    //辅助函数
+    static postOrderTraverseNode(node, callback) {
+        if (node !== null) {
+            binarySearchTree.postOrderTraverseNode(node.left, callback);
+            binarySearchTree.postOrderTraverseNode(node.right, callback);
+            callback(node.key);
+        }
+    }
+    //End 后序遍历
+
+    //Start 搜索
+
+    //最小值
+    min() {
+        return binarySearchTree.minNode(this.state.root);
+    }
+
+    static minNode(node) {
+        if (node) {
+            while (node && node.left !== null) {
+                node = node.left;
+            }
+            return node.key;
+        }
+        return null;
+    }
+
+    //最大值
+    max() {
+        return binarySearchTree.maxNode(this.state.root);
+    }
+
+    static maxNode(node) {
+        if (node) {
+            while (node && node.right !== null) {
+                node = node.right;
+            }
+            return node.key;
+        }
+        return null;
+    }
+    //End 搜索
+
 }
 
-let BinarySearchTree = new binarySearchTree(5);
 
-BinarySearchTree.insert(2);
-BinarySearchTree.insert(1);
-//BinarySearchTree.insert(2);
 

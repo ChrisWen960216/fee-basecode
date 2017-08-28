@@ -143,7 +143,68 @@ module.exports = class binarySearchTree {
         }
         return null;
     }
+
+    //搜索特定的值
+    search(key) {
+        return binarySearchTree.searchNode(this.state.root, key);
+    }
+
+    static searchNode(node, key) {
+        if (node === null) {
+            return false;
+        } else {
+            if (node.key > key) {
+                return binarySearchTree.searchNode(node.left, key);
+            } else {
+                if (node.key < key) {
+                    return binarySearchTree.searchNode(node.right, key);
+                } else {
+                    return true;
+                }
+            }
+        }
+    }
     //End 搜索
+
+    //Start 删除
+    //绑定调用
+    remove(key) {
+        this.state.root = binarySearchTree.removeNode(this.state.root, key);
+    }
+
+    static removeNode(node, key) {
+        if (node === null) {
+            return null;
+        }
+        if (key < node.key) {
+            node.left = binarySearchTree.removeNode(node.left, key);
+            return node;
+        } else if (key > node.key) {
+            node.right = binarySearchTree.removeNode(node.right, key);
+            return node;
+        } else {
+            //一个叶子节点
+            if (node.left === null && node.right === null) {
+                node = null;
+                return node;
+            }
+            //只有一个子节点
+            if (node.left === null && node.right !== null) {
+                node = node.right;
+                return node;
+            } else if (node.right === null && node.left !== null) {
+                node = node.left;
+                return node;
+            }
+
+            let aux = binarySearchTree.minNode(node.right);
+            //console.log('123', aux.key);
+            node.key = aux;
+            node.right = binarySearchTree.removeNode(node.right, aux);
+            return node;
+        }
+    }
+    //End 删除
 
 }
 

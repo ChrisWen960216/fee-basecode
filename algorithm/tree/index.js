@@ -13,6 +13,7 @@ BinarySearchTree.insert(20);
 BinarySearchTree.insert(6);
 BinarySearchTree.insert(90);
 
+console.log('二叉搜索树', BinarySearchTree.state.root);
 console.log('中序遍历')
 BinarySearchTree.inOrderTraverse(BinarySearchTree.printNode);
 console.log('前序遍历')
@@ -22,3 +23,8 @@ BinarySearchTree.postOrderTraverse(BinarySearchTree.printNode);
 
 console.log(BinarySearchTree.min());
 console.log(BinarySearchTree.max());
+console.log(BinarySearchTree.search(90));
+
+BinarySearchTree.remove(2);
+console.log('-------')
+console.log(BinarySearchTree.state.root);

@@ -19,7 +19,7 @@ module.exports = class dictionary {
 
     //移除一个属性
     remove(Key) {
-        if (this.items.has(key)) {
+        if (this.has(key)) {
             delete this.items[key];
             return true;
         } else {
@@ -29,7 +29,7 @@ module.exports = class dictionary {
 
     //查找key,并且获取value
     get(key) {
-        return this.items.has(key) ? this.items[key].value : undefined;
+        return this.has(key) ? this.items[key] : undefined;
     }
 
     //返回字典中所有的value(数组)

@@ -198,7 +198,6 @@ module.exports = class binarySearchTree {
             }
 
             let aux = binarySearchTree.minNode(node.right);
-            //console.log('123', aux.key);
             node.key = aux;
             node.right = binarySearchTree.removeNode(node.right, aux);
             return node;

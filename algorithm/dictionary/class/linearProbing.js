@@ -10,7 +10,7 @@ const HashTable = require('../class/hashTable.js');
 
 module.exports = class linearProbing extends HashTable {
     constructor() {
-        suoper()
+        super()
     }
 
     static loseloseHashCode(key) {

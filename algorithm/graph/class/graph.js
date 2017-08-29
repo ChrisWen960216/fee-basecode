@@ -4,9 +4,12 @@
  */
 
 const dictionary = require('../../dictionary/class/dictionary.js');
-let Dictionary = new dictionary();
+const queue = require('../../list/class/queue.js');
 
-class graph {
+let Dictionary = new dictionary();
+//let Queue = new queue();
+
+module.exports = class graph {
     constructor() {
         this.state = {
             //顶点列表
@@ -29,6 +32,83 @@ class graph {
         this.state.adjList.get(w).push(v);
     }
 
+    //Start 遍历
+    /** white --- 初始化所有顶点的颜色
+     *  grey  --- 已经发现 还没有探索过的点
+     *  black --- 已经发现 已经探索的点
+     */
+    initializeColor() {
+        let color = [];
+        let vertices = this.state.vertices;
+        for (let i = 0; i < vertices.length; i++) {
+            color[vertices[i]] = 'white';
+        }
+        return color;
+    }
+
+    //BFS 广度优先遍历
+    bfs(v, callback) {
+        let color = this.initializeColor();
+        let Queue = new queue();
+        let adjList = this.state.adjList;
+        Queue.enqueue(v); //起始顶点入队列
+
+        while (!Queue.isEmpty()) {
+            let u = Queue.dequeue(); //移除队列的一个点
+            let neighbors = adjList.get(u); //获取邻接表
+            color[u] = 'gray';
+
+            for (let i = 0; i < neighbors.length; i++) { //获取邻接表中所有的点，如果有未发现的，设置为未探索的。并且将未探索的入队列
+                let w = neighbors[i];
+                if (color[w] === 'white') {
+                    color[w] = 'grey';
+                    Queue.enqueue(w);
+                }
+            }
+            color[u] = 'black';
+            if (callback) {
+                callback(u);
+            }
+        }
+    }
+
+    BFS(v, callback) {
+        let color = this.initializeColor();
+        let Queue = new queue();
+        let d = [];
+        let pred = [];
+        let vertices = this.state.vertices;
+        let adjList = this.state.adjList;
+        Queue.enqueue(v);
+
+        for (let i = 0; i < vertices.length; i++) {
+            d[vertices[i]] = 0;
+            pred[vertices[i]] = null;
+        }
+        while (!Queue.isEmpty()) {
+            let u = Queue.dequeue();
+            let neighbors = adjList.get(u);
+            color[u] = 'grey';
+            for (let i = 0; i < neighbors.length; i++) {
+                let w = neighbors[i];
+                if (color[w] === 'white') {
+                    color[w] = 'grey';
+                    d[w] = d[u] + 1;
+                    pred[w] = u;
+                    Queue.enqueue(w);
+                }
+            }
+            color[u] = 'black';
+        }
+        return {
+            distaces: d,
+            predecessors: pred
+        }
+    }
+
+    //
+    //End 遍历
+
     toString() {
         let s = '';
         for (let i = 0; i < this.state.vertices.length; i++) {
@@ -41,22 +121,10 @@ class graph {
         }
         return s;
     }
+
+    //检查遍历callback函数
+    print(value) {
+        console.log('遍历的点是:' + value)
+    }
 }
 
-let Graph = new graph();
-let myVertices = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
-for (let i = 0; i < myVertices.length; i++) {
-    Graph.addVertex(myVertices[i]);
-}
-
-Graph.addEdge('A', 'B');
-Graph.addEdge('A', 'C');
-Graph.addEdge('A', 'D');
-Graph.addEdge('C', 'D');
-Graph.addEdge('C', 'G');
-Graph.addEdge('D', 'H');
-Graph.addEdge('B', 'E');
-Graph.addEdge('B', 'F');
-Graph.addEdge('E', 'I');
-
-console.log(Graph.toString());

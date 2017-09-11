@@ -106,7 +106,34 @@ module.exports = class graph {
         }
     }
 
-    //
+    //dfs 深度优先算法
+    dfs(callback) {
+        let color = this.initializeColor();
+        let vertices = this.state.vertices;
+        let adjList = this.state.adjList;
+        let dfsVisit = (u, color, callback) => {
+            color[u] = 'grey';
+            if (callback) {
+                callback(u);
+            }
+            let neighbors = adjList.get(u);
+            for (let i = 0; i < neighbors.length; i++) {
+                let w = neighbors[i];
+                if (color[w] === 'white') {
+                    dfsVisit(w, color, callback);
+                }
+            }
+            color[u] = 'black';
+        };
+
+        for (let i = 0; i < vertices.length; i++) {
+            if (color[vertices[i]] === 'white') {
+                dfsVisit(vertices[i], color, callback);
+            }
+        }
+    }
+
+
     //End 遍历
 
     toString() {
@@ -124,7 +151,7 @@ module.exports = class graph {
 
     //检查遍历callback函数
     print(value) {
-        console.log('遍历的点是:' + value)
+        console.log('遍历的点是:' + value);
     }
 }
 

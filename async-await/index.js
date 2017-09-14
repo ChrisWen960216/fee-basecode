@@ -1,7 +1,7 @@
 const sleep = time => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve();
+            resolve(console.log('resolve Promise'));
         }, time);
     })
 };
@@ -14,11 +14,11 @@ const start = async () => {
 
 start()
 
-const startCount = async () => {
-    for (let i = 0; i < 11; i++) {
-        console.log(`当前是第${i}次等待`);
-        await sleep(1000);
-    }
-}
+// const startCount = async () => {
+//     for (let i = 0; i < 11; i++) {
+//         console.log(`当前是第${i}次等待`);
+//         await sleep(1000);
+//     }
+// }
 
-startCount();
+// startCount();

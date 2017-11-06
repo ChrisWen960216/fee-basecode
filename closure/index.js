@@ -1,7 +1,4 @@
-/* Created By ChrisWen
- * 17/11/06
- * 闭包
- */
+/* Created By ChrisWen 17/11/06 闭包 */
 
 // 确切的说，这并不是闭包，而是闭包的一部分规则引用.
 function foo() {
@@ -28,8 +25,10 @@ wait('Hello World');
 //   setTimeout(function timer() { console.log(i); }, i * 1000);
 // }
 
-for (var i = 1; i < 5;i++) {
-  (function (j) {
-    setTimeout(function timer() { console.log(j); }, j * 1000);
+for (var i = 1; i < 5; i++) {
+  (function(j) {
+    setTimeout(function timer() {
+      console.log(j);
+    }, j * 1000);
   })(i);
 }

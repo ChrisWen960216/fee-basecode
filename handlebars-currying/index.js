@@ -1,13 +1,11 @@
 /* Handlebars + Currying
 */
-let code = '<p>{{xxx}}</p>';
-let data = {
-    xxx: 'ChrisWen'
-};
+const code = '<p>{{xxx}}</p>';
+const data = { xxx: 'ChrisWen' };
 
 // receive data => <p>{data}</p>
-let middleFunction = Handlebars.compile(code);
-let html = middleFunction(data);
+const middleFunction = Handlebars.compile(code);
+const html = middleFunction(data);
 console.log(html);
 
 /* Currying Example

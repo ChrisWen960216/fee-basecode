@@ -1,13 +1,13 @@
 /* Handlebars + Currying
 */
-let code = '<p>{{xxx}}</p>';
-let data = {
+const code = '<p>{{xxx}}</p>';
+const data = {
   xxx: 'ChrisWen'
 };
 
 // receive data => <p>{data}</p>
-let middleFunction = Handlebars.compile(code);
-let html = middleFunction(data);
+const middleFunction = Handlebars.compile(code);
+const html = middleFunction(data);
 console.log(html);
 
 /* Currying Example
@@ -15,19 +15,19 @@ console.log(html);
  */
 function calc(operator, number1, number2) {
   switch (operator) {
-      case '+':
-            return number1 + number2;
-        case '-':
-            return number1 - number2;
-        case '*':
-            return number1 * number2;
-        case '/':
-            return number1 / number2;
-    }
+  case '+':
+    return number1 + number2;
+  case '-':
+    return number1 - number2;
+  case '*':
+    return number1 * number2;
+  case '/':
+    return number1 / number2;
+  }
 }
 
 function add(number1, number2) {
-    return calc('+', number1, number2)
+  return calc('+', number1, number2);
 }
 
 console.log('add(1,2)', add(1, 2));
@@ -36,12 +36,12 @@ console.log('add(1,2)', add(1, 2));
  * 增加函数参数
  */
 function fn1(p1, p2) {
-    console.log(this)
-    console.log(p1, p2);
+  console.log(this);
+  console.log(p1, p2);
 }
 
 function fn2(context, p1, p2) {
-    return fn1.call(context, p1, p2)
+  return fn1.call(context, p1, p2);
 }
 
-fn2(1, 2, 3)
+fn2(1, 2, 3);

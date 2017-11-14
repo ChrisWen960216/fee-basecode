@@ -2,7 +2,7 @@
 */
 let code = '<p>{{xxx}}</p>';
 let data = {
-    xxx: 'ChrisWen'
+  xxx: 'ChrisWen'
 };
 
 // receive data => <p>{data}</p>
@@ -14,8 +14,8 @@ console.log(html);
  * 多个函数参数 ==>唯一的结果
  */
 function calc(operator, number1, number2) {
-    switch (operator) {
-        case '+':
+  switch (operator) {
+      case '+':
             return number1 + number2;
         case '-':
             return number1 - number2;

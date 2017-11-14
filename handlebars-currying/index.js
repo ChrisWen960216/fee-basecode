@@ -1,9 +1,13 @@
 /* Handlebars + Currying
 */
 const code = '<p>{{xxx}}</p>';
+<<<<<<< HEAD
 const data = {
   xxx: 'ChrisWen'
 };
+=======
+const data = { xxx: 'ChrisWen' };
+>>>>>>> 3a5f76f0c065c4ac4c4faf3317ba93e651232136
 
 // receive data => <p>{data}</p>
 const middleFunction = Handlebars.compile(code);
@@ -44,4 +48,8 @@ function fn2(context, p1, p2) {
   return fn1.call(context, p1, p2);
 }
 
+<<<<<<< HEAD
 fn2(1, 2, 3);
+=======
+fn2(1, 2, 3)
+>>>>>>> 3a5f76f0c065c4ac4c4faf3317ba93e651232136

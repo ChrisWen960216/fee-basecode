@@ -1,6 +1,48 @@
 # this
 ## 调用位置
 函数的调用位置
+## 指向
++ 对象方法调用，this指向对象
+    ```js
+    const obj = {
+      a: 1,
+      getA: function() {
+        console.log(this === obj);
+        console.log(this.a);
+      }
+    }
+    obj.getA();
+    ```
++ 普通函数调用，指向window
+    ```js
+    window.name = 'GlobalName';
+    const getName = function() {return this.name}
+    getName();//GlobalName
+    ```
++ 构造器调用，指向这个对象
+    ```js
+    const myClass = function() {
+      this.name = 'obj';
+    }
+    const obj = new myClass();
+    obj.name // obj
+    ```
++ call 和 apply 可以动态改变this的指向
+    ```js
+    const obj1 = {
+      name: 'ChrisWen',
+      getName: function() {
+        return this.name;
+      }
+    }
+
+    const obj2 = {
+      name: 'ChristianWen'
+    }
+
+    obj1.getName(); // ChrisWen
+    obj1.getName.call(obj2); //ChristianWen
+    ```
 ## 绑定规则
 + 独立函数调用，默认规则
 

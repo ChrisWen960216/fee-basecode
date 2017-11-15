@@ -1,19 +1,18 @@
 /* Created By ChrisWen 17/11/06 闭包 */
 
 // 确切的说，这并不是闭包，而是闭包的一部分规则引用.
-function foo() {
+function foo () {
   const a = 2;
-  function bar() {
+  function bar () {
     console.log(a);
   }
   bar();
 }
-
 foo();
 
 // 闭包
-function wait(message) {
-  setTimeout(function timer() {
+function wait (message) {
+  setTimeout(function timer () {
     console.log(message);
   }, 1000);
 }
@@ -26,8 +25,8 @@ wait('Hello World');
 // }
 
 for (let i = 1; i < 5; i++) {
-  (function(j) {
-    setTimeout(function timer() {
+  (function (j) {
+    setTimeout(function timer () {
       console.log(j);
     }, j * 1000);
   })(i);

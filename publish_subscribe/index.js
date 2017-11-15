@@ -20,4 +20,4 @@ const event = {
       fn.apply(this.arguments);
     }
   }
-}
+};

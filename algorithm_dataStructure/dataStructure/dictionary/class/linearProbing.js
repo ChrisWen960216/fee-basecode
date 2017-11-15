@@ -6,7 +6,7 @@
  * 对于JS实现来说，实际上数组并不需要定义长度，则最长探查序列为 d,d+1,d+2....d+n(d+n为首个没有元素的哈希表地址);
  */
 
-const HashTable = require('../class/hashTable.js');
+const HashTable = require('./hashTable.js');
 
 module.exports = class linearProbing extends HashTable {
     constructor() {

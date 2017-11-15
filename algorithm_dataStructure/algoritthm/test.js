@@ -3,6 +3,7 @@
  * 测试用例，先做一个数组（列表）
  */
 const bubbleSort = require('./bubbleSort');
+const modifiedBubbleSort = require('./bubbleSort');
 class ArrayList {
   constructor () {
     this.array = [];
@@ -28,7 +29,11 @@ function createdNonSortedArray(size) {
   }
   return arrayList;
 }
-createdNonSortedArray(5);
-console.log(arrayList);
+createdNonSortedArray(10);
+console.log('Before Sort:', arrayList.toString());
 bubbleSort(arrayList);
-console.log(arrayList.toString());
+console.log('After Sort:', arrayList.toString());
+createdNonSortedArray(10);
+console.log('Before Sort:', arrayList.toString());
+modifiedBubbleSort(arrayList);
+console.log('After Sort:', arrayList.toString());

@@ -2,35 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11baa4c5-ff0a-413a-9602-fac7c49df2c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/graph/class/graph.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithm/graph/class/graph.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eslintrc.json" afterPath="$PROJECT_DIR$/.eslintrc.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/closure/index.js" afterPath="$PROJECT_DIR$/closure/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/publish_subscribe/index.js" afterPath="$PROJECT_DIR$/publish_subscribe/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/dictionary/class/dictionary.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/dictionary/class/dictionary.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/dictionary/class/hashTable.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/dictionary/class/hashTable.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/dictionary/class/linearProbing.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/dictionary/class/linearProbing.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/dictionary/class/valuePair.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/dictionary/class/valuePair.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/dictionary/example/index.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/dictionary/example/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/graph/index.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/graph/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/linkedList/class/doublyLinkedList.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/linkedList/class/doublyLinkedList.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/linkedList/class/linkedList.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/linkedList/class/linkedList.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/linkedList/index.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/linkedList/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/list/class/priorityQueue.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/list/class/priorityQueue.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/list/class/queue.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/list/class/queue.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/list/class/stack.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/list/class/stack.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/list/example/divideTwo.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/list/example/divideTwo.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/list/example/hotPotato.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/list/example/hotPotato.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/list/index.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/list/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/set/class/set.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/set/class/set.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/set/example/setOperations.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/set/example/setOperations.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/set/index.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/set/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/test/index.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/test/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/tree/class/binarySearchTree.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/tree/class/binarySearchTree.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithm/tree/index.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/tree/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithm_dataStructure/algoritthm/bubbleSort.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/algoritthm/bubbleSort.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithm_dataStructure/algoritthm/test.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/algoritthm/test.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,8 +27,8 @@
       <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/algorithm_dataStructure/algoritthm/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+            <state relative-caret-position="130">
+              <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -65,8 +39,8 @@
       <file leaf-file-name="bubbleSort.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithm_dataStructure/algoritthm/bubbleSort.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+            <state relative-caret-position="-8">
+              <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="35" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -186,7 +160,7 @@
     <property name="nodejs_interpreter_path" value="F:/NodeJS/nodejs/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="node.js.path.for.package.eslint" value="F:/NodeJS/nodejs/node" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="F:\workspace\fee-basecode\node_modules\eslint" />
@@ -234,7 +208,7 @@
       <workItem from="1510707185860" duration="14000" />
       <workItem from="1510707311430" duration="290000" />
       <workItem from="1510716460511" duration="182000" />
-      <workItem from="1510716689332" duration="5399000" />
+      <workItem from="1510716689332" duration="6567000" />
     </task>
     <task id="LOCAL-00001" summary="Commit this project by WS in Mac OSX">
       <created>1510659732721</created>
@@ -247,7 +221,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7364000" />
+    <option name="totallyTimeSpent" value="8532000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -448,8 +422,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithm_dataStructure/algoritthm/bubbleSort.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        <state relative-caret-position="-8">
+          <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="35" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -458,8 +432,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithm_dataStructure/algoritthm/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+        <state relative-caret-position="130">
+          <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

@@ -1,5 +1,5 @@
 # FEE-BaseCode
-> ### This repository is my record of some basic knowledge and code that I learned and summarized at work as a primary FEE.
+ This repository is my record of some basic knowledge and code that I learned and summarized at work as a primary FEE.
 ---
 
 ## 1. Curring-Function

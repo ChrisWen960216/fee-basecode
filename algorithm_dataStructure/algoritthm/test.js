@@ -6,6 +6,7 @@ const bubbleSort = require('./bubbleSort');
 const modifiedBubbleSort = require('./bubbleSort');
 const selectionSort = require('./selectionSort');
 const insertSort = require('./insertSort');
+const mergeSort = require('./mergeSort');
 
 class ArrayList {
   constructor () {
@@ -50,3 +51,4 @@ createdNonSortedArray(10);
 console.log('Before Sort:', arrayList.toString());
 insertSort(arrayList);
 console.log('After Sort:', arrayList.toString());
+mergeSort(arrayList);

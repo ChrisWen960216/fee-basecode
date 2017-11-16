@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11baa4c5-ff0a-413a-9602-fac7c49df2c4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithm_dataStructure/algoritthm/test.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/algoritthm/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/dictionary/class/dictionary.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/dictionary/class/dictionary.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/dictionary/class/hashTable.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/dictionary/class/hashTable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/dictionary/class/linearProbing.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/dictionary/class/linearProbing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/dictionary/class/valuePair.js" afterPath="$PROJECT_DIR$/algorithm_dataStructure/dataStructure/dictionary/class/valuePair.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,40 +22,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algorithm_dataStructure/algoritthm/test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="selectionSort.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/algorithm_dataStructure/algoritthm/selectionSort.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dictionary.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algorithm_dataStructure/dataStructure/dictionary/class/dictionary.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="insertSort.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithm_dataStructure/algoritthm/insertSort.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -77,9 +37,21 @@
       <file leaf-file-name="bubbleSort.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithm_dataStructure/algoritthm/bubbleSort.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+            <state relative-caret-position="351">
+              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mergeSort.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/algorithm_dataStructure/algoritthm/mergeSort.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="27" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,6 +88,7 @@
         <option value="$PROJECT_DIR$/algorithm_dataStructure/algoritthm/selectionSort.js" />
         <option value="$PROJECT_DIR$/algorithm_dataStructure/algoritthm/insertSort.js" />
         <option value="$PROJECT_DIR$/algorithm_dataStructure/algoritthm/test.js" />
+        <option value="$PROJECT_DIR$/algorithm_dataStructure/algoritthm/mergeSort.js" />
       </list>
     </option>
   </component>
@@ -277,7 +250,7 @@
       <workItem from="1510716460511" duration="182000" />
       <workItem from="1510716689332" duration="9611000" />
       <workItem from="1510790472609" duration="31000" />
-      <workItem from="1510792863234" duration="1226000" />
+      <workItem from="1510792863234" duration="3135000" />
     </task>
     <task id="LOCAL-00001" summary="Commit this project by WS in Mac OSX">
       <created>1510659732721</created>
@@ -290,10 +263,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12833000" />
+    <option name="totallyTimeSpent" value="14742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.098524764" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -302,7 +276,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284091" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2284091" sideWeight="0.4978746" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2284091" sideWeight="0.4978746" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -326,7 +300,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -642,6 +616,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm_dataStructure/algoritthm/selectionSort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm_dataStructure/algoritthm/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/algorithm_dataStructure/dataStructure/dictionary/class/dictionary.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
@@ -649,14 +641,6 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm_dataStructure/algoritthm/bubbleSort.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -670,18 +654,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm_dataStructure/algoritthm/test.js">
+    <entry file="file://$PROJECT_DIR$/algorithm_dataStructure/algoritthm/bubbleSort.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+        <state relative-caret-position="351">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm_dataStructure/algoritthm/selectionSort.js">
+    <entry file="file://$PROJECT_DIR$/algorithm_dataStructure/algoritthm/mergeSort.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        <state relative-caret-position="264">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="27" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

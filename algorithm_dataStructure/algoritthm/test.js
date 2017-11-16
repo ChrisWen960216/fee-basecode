@@ -5,6 +5,7 @@
 const bubbleSort = require('./bubbleSort');
 const modifiedBubbleSort = require('./bubbleSort');
 const selectionSort = require('./selectionSort');
+const insertSort = require('./insertSort');
 
 class ArrayList {
   constructor () {
@@ -31,15 +32,21 @@ function createdNonSortedArray(size) {
   }
   return arrayList;
 }
-// createdNonSortedArray(10);
-// console.log('Before Sort:', arrayList.toString());
-// bubbleSort(arrayList);
-// console.log('After Sort:', arrayList.toString());
-// createdNonSortedArray(10);
-// console.log('Before Sort:', arrayList.toString());
-// modifiedBubbleSort(arrayList);
-// console.log('After Sort:', arrayList.toString());
+
+createdNonSortedArray(10);
+console.log('Before Sort:', arrayList.toString());
+bubbleSort(arrayList);
+console.log('After Sort:', arrayList.toString());
+createdNonSortedArray(10);
+console.log('Before Sort:', arrayList.toString());
+modifiedBubbleSort(arrayList);
+console.log('After Sort:', arrayList.toString());
 createdNonSortedArray(10);
 console.log('Before Sort:', arrayList.toString());
 selectionSort(arrayList);
+console.log('After Sort:', arrayList.toString());
+arrayList.array = [];
+createdNonSortedArray(10);
+console.log('Before Sort:', arrayList.toString());
+insertSort(arrayList);
 console.log('After Sort:', arrayList.toString());

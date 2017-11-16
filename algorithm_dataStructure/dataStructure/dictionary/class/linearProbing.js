@@ -9,64 +9,61 @@
 const HashTable = require('./hashTable.js');
 
 module.exports = class linearProbing extends HashTable {
-    constructor() {
-        super()
+
+  static loseloseHashCode(key) {
+    return super.loseloseHashCode(key);
+  }
+
+  // 插入
+  put(key, value) {
+    let position = loseloseHashCode(key);
+    const table = this.table;
+
+    if (table[position] === undefined) { // 如果该位置上没有元素，直接插入
+      table[position] = new linearProbing(key, value);
+    } else {
+      while (table[position] !== undefined) { // 如果有元素，地址+1继续搜索，一直到没有元素位置，填入k--v
+        position++;
+      }
+      table[position] = new linearProbing(key, value);
     }
+  }
 
-    static loseloseHashCode(key) {
-        return super.loseloseHashCode(key);
-    }
+  // 获取
+  get(key) {
+    let position = loseloseHashCode(key);
+    const table = this.table;
 
-    //插入
-    put(key, value) {
-        let position = loseloseHashCode(key);
-        let table = this.table;
-
-        if (table[position] === undefined) { //如果该位置上没有元素，直接插入
-            table[position] = new linearProbing(key, value);
-        } else {
-            while (table[position] !== undefined) { // 如果有元素，地址+1继续搜索，一直到没有元素位置，填入k--v
-                position++;
-            }
-            table[position] = new linearProbing(key, value);
+    if (table[position] !== undefined) {
+      if (table[position].key === key) {
+        return table[position].value;
+      } else {
+        while (table[position] !== undefined && (table[position] && table[position].key !== key)) {
+          position++;
         }
-    }
-
-    //获取
-    get(key) {
-        let position = loseloseHashCode(key);
-        let table = this.table;
-
-        if (table[position] !== undefined) {
-            if (table[position].key === key) {
-                return table[position].value;
-            } else {
-                while (table[position] !== undefined && (table[position] && table[position].key !== key)) {
-                    position++;
-                }
-                if (table[position] && table[position].key === key) {
-                    return table[position].value;
-                }
-            }
+        if (table[position] && table[position].key === key) {
+          return table[position].value;
         }
+      }
     }
+  }
 
-    //移除
-    remove(key) {
-        let position = loseloseHashCode(key);
-        let table = this.table;
+  // 移除
+  remove(key) {
+    let position = loseloseHashCode(key);
+    const table = this.table;
 
-        if (table[position] !== undefined) {
-            if (table[position].key === key) {
-                table[position] = undefined;
-            } else {
-                while (table[position] !== undefined && (table[position] && table[position].key !== key)) {
-                    position++;
-                }
-                if (table[position] && table[position].key === key) {
-                    table[position] = undefined;
-                }
-            }
+    if (table[position] !== undefined) {
+      if (table[position].key === key) {
+        table[position] = undefined;
+      } else {
+        while (table[position] !== undefined && (table[position] && table[position].key !== key)) {
+          position++;
         }
+        if (table[position] && table[position].key === key) {
+          table[position] = undefined;
+        }
+      }
     }
-}
+  }
+};

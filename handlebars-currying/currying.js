@@ -2,10 +2,10 @@ function curry(array, param) {
   if (!Array.isArray(param)) { param = []; }
   return function() {
     const paraCollection = Array.prototype.slice.call(arguments);
-    if (param.length !== param.concat(paraCollection).length) {
-      return curry(array, param.concat(paraCollection));
-    } else {
+    if (param.length === param.concat(paraCollection).length) {
       return array.apply(undefined, param.concat(paraCollection));
+    } else {
+      return curry(array, param.concat(paraCollection));
     }
   };
 }

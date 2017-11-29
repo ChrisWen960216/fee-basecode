@@ -1,21 +1,7 @@
-// function curry(array) {
-//   const resultArray = [];
-//   return function(array) {
-//     if (arguments) {
-//       for (const k in arguments) {
-//         resultArray.push(arguments[k]);
-//       }
-//     } else {
-//       console.log(resultArray);
-//     }
-//   };
-// }
-
 function curry(array, param) {
   if (!Array.isArray(param)) { param = []; }
   return function() {
     const paraCollection = Array.prototype.slice.call(arguments);
-    // console.log(param, param.concat(paraCollection));
     if (param.length !== param.concat(paraCollection).length) {
       return curry(array, param.concat(paraCollection));
     } else {

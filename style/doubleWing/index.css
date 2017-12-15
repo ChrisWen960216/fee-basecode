@@ -1,0 +1,48 @@
+body {
+  background: black;
+  color: white;
+}
+header {
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  cursor: default;
+  color: #6252CD;
+  border-bottom: 1px solid #948AEC;
+}
+
+.box {
+  height: 300px;
+  float: left;
+}
+.clearfix:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+#container{
+  width: 100%;
+}
+.main{
+  width: 100%;
+  margin: 0 20% 0 20%;
+}
+.main-content {
+  width: 100%;
+}
+.main{
+  background: pink;
+
+}
+.left-content{
+  width: 20%;
+  margin-left: -100%;
+  background: white;
+
+}
+.right-content{
+  width: 20%;
+  margin-left: -20%;
+  background: yellowgreen;
+  
+}

@@ -1,23 +1,23 @@
-class LinkNode{
-  constructor(val){
+class LinkNode {
+  constructor(val) {
     this.val = val;
     this.next = null;
   }
-  toString(){
-    if(this.next===null) return this.val;
-    return this.val+","+this.next;
+  toString() {
+    if (this.next === null) return this.val;
+    return this.val + ',' + this.next;
   }
 }
 
-function genNode(val){
-  //const val = parseInt(Math.random()*10,10);
+function genNode(val) {
+  // const val = parseInt(Math.random()*10,10);
   return new LinkNode(val);
 }
 
-function genNodes(num){
+function genNodes(num) {
   let node = new LinkNode(-1);
   let node_pr = node;
-  for(let i=0;i<num;i++){
+  for (let i = 0;i < num;i++) {
     node_pr.next = genNode(i);
     node_pr = node_pr.next;
   }
@@ -33,17 +33,17 @@ function genNodes(num){
  * @param {number} index
  * @return {LinkNode}
  */
-function remove(linknode,index){
+function remove(linknode, index) {
   let position = 0;
   let assitsLinkNode = index === 0 ? linknode.next : linknode;
-  while(index > 1 && position < index - 1) {
-    if(assitsLinkNode.next === null || index < 0){
-      return linknode
+  while (index > 1 && position < index - 1) {
+    if (assitsLinkNode.next === null || index < 0) {
+      return linknode;
     }
     assitsLinkNode = assitsLinkNode.next;
-    position ++
+    position++;
   }
-  if(assitsLinkNode.next !== null && index > 0){
+  if (assitsLinkNode.next !== null && index > 0) {
     assitsLinkNode.next = assitsLinkNode.next.next;
   }
   return linknode;
@@ -53,7 +53,7 @@ function remove(linknode,index){
 // 谁说写不下？！
 function remove(linknode, index) {
   let i = 0, pr = index === 0 ? linknode = linknode.next : linknode;
-  while (pr && i < index){ (i++ === index - 1 && pr.next) ? pr.next = pr.next.next : pr = pr.next; }
+  while (pr && i < index) { (i++ === index - 1 && pr.next) ? pr.next = pr.next.next : pr = pr.next; }
   return linknode;
 }
 
@@ -64,35 +64,34 @@ function remove(linknode, index) {
  * @param {number} index
  * @return {LinkNode}
  */
-function insert(linknode, _node, index){
+function insert(linknode, _node, index) {
   let position = 0;
   let assitsLinkNode = linknode;
-  let sertIndex = index +1;
-  if(sertIndex === 0){
+  const sertIndex = index + 1;
+  if (sertIndex === 0) {
     _node.next = linknode;
     linknode = _node;
-  } else if(sertIndex > 0){
-    while(position < sertIndex-1) {
-      if(!assitsLinkNode) {
+  } else if (sertIndex > 0) {
+    while (position < sertIndex - 1) {
+      if (!assitsLinkNode) {
         return linknode;
       }
       assitsLinkNode = assitsLinkNode.next;
-      position ++;
+      position++;
     }
-    if(assitsLinkNode !== null){
+    if (assitsLinkNode !== null) {
       _node.next = assitsLinkNode.next;
-    assitsLinkNode.next = _node
+      assitsLinkNode.next = _node;
     }
   }
   return linknode;
 }
 
-
-//完成remove方法
+// 完成remove方法
 const linknode = genNodes(6);
-const result = remove(linknode,0);
+const result = remove(linknode, 0);
 const newNode = new LinkNode(6);
 const newLinkNode = insert(linknode, newNode, 1);
 console.log(result.toString());
 console.log(newLinkNode.toString());
-//console.assert(result.toString()==='0,1,2,3,5')
+// console.assert(result.toString()==='0,1,2,3,5')

@@ -18,6 +18,7 @@
     "no-console": 0,
     "prefer-const": 2,
     "space-before-function-paren": "off",
-    "no-unused-vars": 0
+    "no-unused-vars": 0,
+    "camelcase": 0
   }
 }

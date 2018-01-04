@@ -64,5 +64,4 @@ function calc(callback) {
   }
 }
 
-calc(data => { console.log(data) ; })
-;
+calc(data => { console.log(data) ; });

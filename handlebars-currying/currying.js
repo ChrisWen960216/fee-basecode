@@ -1,21 +1,21 @@
-function curry(array, param) {
-  if (!Array.isArray(param)) { param = []; }
-  return function() {
-    const paraCollection = Array.prototype.slice.call(arguments);
-    if (param.length === param.concat(paraCollection).length) {
-      return array.apply(undefined, param.concat(paraCollection));
-    } else {
-      return curry(array, param.concat(paraCollection));
-    }
-  };
+"use strict";
+/** Created By ChrisWen
+  * 17/11/23
+  * 柯里化
+  */
+function curry(data) {
+    var dataArray = [];
+    return function (datas) {
+        return dataArray;
+    };
 }
-
-var _array = function() {
-  return [];
+var abc = function (a, b, c) {
+    return [a, b, c];
 };
-
-var curried = curry(_array);
-
-curried(1)(2, 999)(3)(4, 5, 6, 7, 8, 9, 10)(); // => [1,2,3]
-// curry(1, 2)(3); // => [1,2,3]
-// curry(1, 2, 3); // => [1,2,3]
+var curried = curry(abc);
+curried(1)(2)(3);
+// => [1, 2, 3]
+curried(1, 2)(3);
+// => [1, 2, 3]
+curried(1, 2, 3);
+// => [1, 2, 3]

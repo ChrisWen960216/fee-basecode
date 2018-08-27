@@ -1,8 +1,8 @@
 const Node = require('./node');
 
 class BST {
-  constructor(root = null) {
-    this.root = root;
+  constructor(key) {
+    this.root = new Node(key);
   }
 
   insert(key) {
@@ -17,17 +17,15 @@ class BST {
     const { key: curKey } = curNode;
     const { key: newKey } = newNode;
     if (curKey > newKey) {
-      let { left: curLeft } = curNode;
-      if (!curLeft) {
-        return curLeft = newNode;
+      if (!curNode.left) {
+        return curNode.left = newNode;
       }
-      return this.insertNode(curLeft, newNode);
+      return this.insertNode(curNode.left, newNode);
     }
-    let { right: curRight } = curNode;
-    if (!curRight) {
-      return curRight = newNode;
+    if (!curNode.right) {
+      return curNode.right = newNode;
     }
-    return this.insertNode(curRight, newNode);
+    return this.insertNode(curNode.right, newNode);
   }
 }
 

@@ -9,6 +9,22 @@ function inOrderTraverse(node, tag = 'ROOT') {
   }
 }
 
+function preOrderTraverse(node, tag = 'ROOT') {
+  if (node) {
+    console.log(colors.blue(node.key, tag));
+    preOrderTraverse(node.left, 'left');
+    preOrderTraverse(node.right, 'right');
+  }
+}
+
+function postOrderTraverse(node, tag = 'ROOT') {
+  if (node) {
+    postOrderTraverse(node.left, 'left');
+    postOrderTraverse(node.right, 'right');
+    console.log(colors.red(node.key, tag));
+  }
+}
+
 function insertNode(bst) {
   let i = 0;
   while (i < 20) {
@@ -22,3 +38,5 @@ function insertNode(bst) {
 const newBst = new BST(10);
 const bst = insertNode(newBst);
 inOrderTraverse(bst.root);
+preOrderTraverse(bst.root);
+postOrderTraverse(bst.root);

@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@types/node@8.5.5":
+  version "8.5.5"
+  resolved "http://registry.npm.taobao.org/@types/node/download/@types/node-8.5.5.tgz#6f9e8164ae1a55a9beb1d2571cfb7acf9d720c61"
+  integrity sha1-b56BZK4aVam+sdJXHPt6z51yDGE=
+
 acorn-jsx@^3.0.0:
   version "3.0.1"
   resolved "http://registry.npm.taobao.org/acorn-jsx/download/acorn-jsx-3.0.1.tgz#afdf9488fb1ecefc8348f6fb22f464e32a58b36b"

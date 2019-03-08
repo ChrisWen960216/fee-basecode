@@ -4,41 +4,43 @@
  */
 
 module.exports = class queue {
-    constructor() {
-        this.items = [];
-    }
-    // 声明 添加 / 移除 元素的方法
-    enqueue(element) {
-        this.items.push(element);
+  constructor() {
+    this.items = [];
+  }
+  // 声明 添加 / 移除 元素的方法
+  enqueue(element) {
+    this.items.push(element);
+    return this.items;
     // console.log('this.items', this.items);
-    }
+  }
 
-    dequeue() {
-        return this.items.shift();
-    }
+  dequeue() {
+    this.items.shift();
+    return this.items;
+  }
 
-    // 返回队列最前面的项
-    front() {
-        return this.items[0];
-    }
+  // 返回队列最前面的项
+  front() {
+    return this.items[0];
+  }
 
-    //判断队列是否为空
-    isEmpty() {
-        return this.items.length === 0;
-    }
+  // 判断队列是否为空
+  isEmpty() {
+    return this.items.length === 0;
+  }
 
-    //获取队列长度
-    size() {
-        return this.items.length;
-    }
+  // 获取队列长度
+  size() {
+    return this.items.length;
+  }
 
-    //清空队列
-    clear() {
-        this.items = [];
-    }
+  // 清空队列
+  clear() {
+    this.items = [];
+  }
 
-    //打印队列
-    print() {
-        console.log(this.items.toString());
-    }
-}
+  // 打印队列
+  print() {
+    console.log(this.items.toString());
+  }
+};

@@ -1,4 +1,4 @@
-[![Bless](https://cdn.rawgit.com/LunaGao/BlessYourCodeTag/master/tags/god.svg)](http://lunagao.github.io/BlessYourCodeTag/)
+[![Bless](https://cdn.rawgit.com/LunaGao/BlessYourCodeTag/master/tags/sakyamuni.svg)](http://lunagao.github.io/BlessYourCodeTag/)
 # FEE-BaseCode
  This repository is my record of some basic knowledge and code that I learned and summarized at work as a primary FEE.
 ---

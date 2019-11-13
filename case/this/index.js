@@ -4,12 +4,12 @@
  */
 
 // this 可以隐式的传递上下文对象
-function identify () {
+function identify() {
   return this.name.toUpperCase();
 }
 
-function speak () {
-  const greeting = 'Hello, I am ' + identify.call(this);
+function speak() {
+  const greeting = `Hello, I am ${identify.call(this)}`;
   console.log(greeting);
 }
 

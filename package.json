@@ -16,10 +16,5 @@
   "bugs": {
     "url": "https://github.com/ChrisWen960216/fee-basecode/issues"
   },
-  "homepage": "https://github.com/ChrisWen960216/fee-basecode#readme",
-  "devDependencies": {
-    "eslint": "^6.6.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2"
-  }
+  "homepage": "https://github.com/ChrisWen960216/fee-basecode#readme"
 }

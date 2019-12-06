@@ -48,4 +48,6 @@ const o2 = {
   fn: o1.fn,
 };
 
-console.log(o2.fn.call(o2));
+console.log(o2);
+
+console.log(global.global.global);

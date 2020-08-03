@@ -1,18 +1,3 @@
-function f1() {
-  console.log(this);
-}
-
-function f2() {
-  'use strict';
-
-  console.log(this);
-}
-
-f1(); // Global / Window
-
-f2(); // undefined
-
-
 const foo = {
   bar: 10,
   fn() {
